@@ -22,6 +22,7 @@ english = Field(tokenize=tokenize_en, lower=True, init_token="<sos>", eos_token=
 
 train_data, valid_data, test_data = Multi30k(language_pair=("de", "en"))
 
+# Build the vocabulary used in the dataset: ("Apple", "in", "tree") => (0, 1, 2)
 german.build_vocab(train_data, max_size=10000, min_freq=2)
 english.build_vocab(train_data, max_size=10000, min_freq=2)
 
