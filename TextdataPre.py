@@ -77,5 +77,6 @@ train_iterator, validation_iterator, test_iterator = BucketIterator.splits(
 #     print(batch)
 print(english.vocab.stoi["the"])
 print(english.vocab.itos[5])
+print(len(english.vocab))
 # =============================================================================================
 # =============================================================================================
